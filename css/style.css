@@ -6,11 +6,11 @@
 
 /* Custom properties, update these for your own design */
 :root {
-  --ff-primary: "Source Code Pro", monospace;
-  --ff-secondary: "Source Sans Pro", sans-serif;
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
 
   --fw-reg: 300;
-  --fe-bold: 900;
+  --fw-bold: 900;
 
   --clr-light: #fff;
   --clr-dark: #303030;
@@ -42,28 +42,42 @@ body {
   line-height: 1.6;
 }
 
+section {
+  padding: 5em 2em;
+}
+
 img {
   display: block;
   max-width: 100%;
 }
 
-/* Typogrophy */
+strong {
+  font-weight: bold;
+}
+
+.logo {
+  top: 34px;
+  left: 45px;
+  width: 139px;
+  height: 25px;
+  background: #303030 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+/* Typography */
 
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
 h1 {
   font-size: var(--fs-h1);
 }
-
 h2 {
   font-size: var(--fs-h2);
 }
-
 h3 {
   font-size: var(--fs-h3);
 }
@@ -89,4 +103,32 @@ h3 {
 .section__subtitle--about {
   background: var(--clr-accent);
   font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* Header */
+
+nav {
+  display: none;
+}
+
+/* Intro Section */
+
+.intro {
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro__img {
+    grid-area: img;
+    min-width: 250px;
+  }
 }
