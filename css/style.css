@@ -58,24 +58,31 @@ strong {
   font-weight: bold;
 }
 
+/* TODO: fix this offset outline 1:07 video */
+:focus {
+    outline: 3px solid var(--clr-dark);
+    outline-offset: 10px;
+}
+
+
 /* BUTTONS */
 
 .btn {
-    display: inline-block;
-    padding: .5em 1.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
-    text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
+  display: inline-block;
+  padding: 0.5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
 }
 
 .btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .logo {
@@ -202,6 +209,10 @@ nav {
   opacity: 0.25;
 }
 
+.services {
+    margin-bottom: 4em;
+}
+
 .service {
   max-width: 500px;
   margin: 0 auto;
@@ -211,7 +222,8 @@ nav {
   .services {
     display: flex;
     max-width: 1000px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .service + .service {
