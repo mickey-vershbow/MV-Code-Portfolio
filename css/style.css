@@ -249,8 +249,10 @@ header {
     position: relative;
 }
 
+
 .intro__img {
     box-shadow: var(--bs);
+    border: 30px solid var(--clr-light);
 }
 
 .section__subtitle--intro {
