@@ -252,7 +252,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
-    border: 30px solid var(--clr-light);
+    /* border: 20px solid var(--clr-light); */
 }
 
 .section__subtitle--intro {
