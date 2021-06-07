@@ -1,171 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevJane Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MickeyDev Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/devjane.png" alt="" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Introduction -->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Mickey Vershbow</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        Full-Stack Web Developer
+      </p>
+      <img
+        src="img/mickey/headshot-smiling-profile copy.jpg"
+        alt="a picture of Mickey smiling"
+        class="intro__img"
+      />
+    </section>
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Jane Smith</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
-        </section>
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Data Management + Development</h3>
+          <p>
+            I am passionate about writing concise, efficient, testable code
+            using best software development practices. As a musician, I learned
+            to utilize both creativity and logic to deliver results that met the
+            requirements and standards of the team I was hired by with
+            professionalism, enthusiasm, and integrity.
+          </p>
+        </div>
+        <!-- / service -->
 
+        <div class="service">
+          <h3>Communication & Collaboration</h3>
+          <p>
+            With my extensive background in music and education, I am accustomed
+            to collaborating with a team to achieve measurable outcomes - on a
+            deadline. I am practiced at integrating myself into a wide range of
+            working environments and communicating across different backgrounds
+            and disciplines.
+          </p>
+        </div>
+        <!-- / service -->
 
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
+        <div class="service">
+          <h3>Learning and Growth</h3>
+          <p>
+            My experience as a professional musician and educator taught me how
+            to learn efficiently and apply that knowledge in a wide range of
+            concepts with flexibility, creativity, and precision. I'm
+            continuously inspired to share knowledge with others and absorb new
+            information about my craft at every possible opportunity.
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
 
-                <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
+      <a href="#work" class="btn">My Work</a>
+    </section>
 
-                <div class="service">
-                    <h3>WordPress</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> <!-- / service -->
-            </div> <!-- / services -->
+    <!-- TODO: ADD LANGUAGES AND FRAMEWORKS ICON LIST -->
 
-            <a href="#work" class="btn">My Work</a>
-        </section>
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Full-Stack developer based out of NYC
+      </p>
 
+      <div class="about-me__body">
+        <p>
+          Hi, I'm Mickey! I'm a full-stack software engineer with a background
+          in music performance, creative writing, and education. Over the last
+          ten years I've been focused on growing my
+          <a href="https://www.mickeyvershbow.com">drum lessons studio</a> in
+          Brooklyn, which aims to provide a space for women, trans and
+          non-binary folks who want to learn the drums in a queer-friendly,
+          non-competitive environment. As I shift my focus to working in the
+          tech space, my aim is to combine my skills in technology,
+          communication, and education in order to positively impact the world
+          around me.
+        </p>
 
-        <!-- About me -->
-        <section class="about-me" id="about">
-           <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about">Designer & developer based out of NYC</p>
+        <p>
+          A creative and curious team player by nature, as well as a highly-trained
+          performer and educator, I always consider the needs of my audience,
+          and am relentlessly driven to create well-rounded, streamlined
+          products that are not only enjoyable, but meaningful to use.
+          <!-- I'm a
+          member of Artists Who Code, a volunteer organization which advocates
+          for creative professionals with non-traditional backgrounds in the
+          tech industry, -->
+          In addition to studying performance at Berklee College of Music, I am
+          a graduate of The Evergreen State College (BA in Music Education) and
+          the Software Engineering Immersive at General Assembly.
+        </p>
 
-           <div class="about-me__body">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-           </div>
+        <!-- <p>
+          Aside from my interests in programming, music, and education, I am
+          passionate about working to make my lifestyle as climate-friendly as
+          possible. I strive to educate myself about the supply chain and
+          climate impact of the products I consume, ride my bicycle instead of
+          driving whenever possible, and grow as much of my own food as I can.
+        </p> -->
 
-           <img src="img/dev-jane-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
-        </section>
+        <p class="resume-link">Click <a href="">here</a> for my resume.</p>
+      </div>
 
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+      <img
+        src="img/mickey/studio-profile-shot.jpg"
+        alt="mickey smiling"
+        class="about-me__img"
+      />
+    </section>
 
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
-                </a>
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my range of work
+      </p>
 
-                <!-- Portfolio item 02 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
-                </a>
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a
+          href="https://vinylmatic.netlify.app/"
+          target="blank"
+          class="portfolio__item"
+        >
+          <img src="img/mickey/vinyl_collection.svg" alt="" class="portfolio__img" />
+        </a>
+        <div class="portfolio-container">
+          <div class="project-text-header">
+            <h1 class="project-header">VINYLMATIC</h1>
+          </div>
+          <div class="project-text-subheader">
+            <h4>
+              A simple MERN-stack app for catologuing your vinyl collection or
+              wish list.
+            </h4>
+          </div>
+          <div class="project-text-paragraph">
+            <p>
+              Node.js | Express | React.js | Mongoose | SCSS | React-Bootstrap
+            </p>
+            <br>
 
-                <!-- Portfolio item 03 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
-                </a>
+          </div>
+        </div>
 
-                <!-- Portfolio item 04 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
+        <!-- Portfolio item 02 -->
+        <a
+          href="https://houseplant7mv.herokuapp.com/"
+          target="blank"
+          class="portfolio__item"
+        >
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.P-k7GKdxIwCRgFujGR-kDAHaEo%26pid%3DApi&f=1"
+            alt=""
+            class="portfolio__img"
+          />
+        </a>
+        <div class="portfolio-container">
+          <div class="project-text-header">
+            <h1 class="project-header">HOUSEPLANT</h1>
+          </div>
+          <div class="project-text-subheader">
+            <h4>
+              Discover your new favorite house plant and catalogue your
+              collection!
+            </h4>
+          </div>
+          <div class="project-text-paragraph">
+            <p>Node.js | Express | MongoDb | Mongoose | Bulma | CSS</p>
+          </div>
+        </div>
 
-                <!-- Portfolio item 05 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
-                </a>
+        <!-- Portfolio item 03 -->
+        <!-- <a href="#" class="portfolio__item">
+          <img src="img/portfolio-03.jpg" alt="" class="portfolio__img" />
+        </a> -->
 
-                <!-- Portfolio item 06 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
-                </a>
+        <!-- Portfolio item 04 -->
+        <!-- <a href="#" class="portfolio__item">
+          <img src="img/portfolio-04.jpg" alt="" class="portfolio__img" />
+        </a> -->
+      </div>
+    </section>
 
-                <!-- Portfolio item 07 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:mickey.vershbow@gmail.com" class="footer__link"
+        >mickey.vershbow@gmail.com
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <!-- HousePlant -->
+          <a
+            class="social-list__link"
+            href="https://dashboard.heroku.com/apps/houseplant7mv"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <!-- Stocks Router -->
+          <a
+            class="social-list__link"
+            href="https://stocks-router.herokuapp.com/"
+          >
+            <i class="fab fa-medium"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com">
+            <i class="fab fa-slack"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
 
-                <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 09 -->
-                <!-- <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
-                </a> -->
-
-                <!-- Portfolio item 10 -->
-                <!-- <a href="#" class="portfolio__item">
-                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
-                </a> -->
-            </div>
-        </section>
-
-
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:mickey.vershbow@gmail.com" class="footer__link">mickey.vershbow@gmail.com
-            </a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-codepen"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-slack"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
-
-        <script src="js/index.js"></script>
-    </body>
+    <script src="js/index.js"></script>
+  </body>
 </html>
