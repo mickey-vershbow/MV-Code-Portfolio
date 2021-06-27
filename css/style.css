@@ -384,7 +384,7 @@ header {
 /* My Work */
 
 .card {
-  border: 3px solid yellow;
+  max-width: 400px;
 }
 
 .my-work {
@@ -393,9 +393,14 @@ header {
   text-align: center;
 }
 
-.portfolio {
+/* .portfolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+} */
+
+.portfolio {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .portfolio__item {
@@ -415,25 +420,13 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.08);
-  opacity: 0.8;
-}
-
-/* Container holding the image and the text */
-.portfolio-container {
-  position: relative;
-  text-align: center;
-  color: white;
-  padding-left: 20px;
+  opacity: 0.5;
 }
 
 .portfolio-text-container {
   text-decoration: none;
   color: white;
 }
-
-/* #project-header {
-    padding-top: 20px;
-} */
 
 /* footer */
 
