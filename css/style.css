@@ -383,6 +383,10 @@ header {
 
 /* My Work */
 
+.card {
+  border: 3px solid yellow;
+}
+
 .my-work {
   background-color: var(--clr-dark);
   color: var(--clr-light);
@@ -420,6 +424,11 @@ header {
   text-align: center;
   color: white;
   padding-left: 20px;
+}
+
+.portfolio-text-container {
+  text-decoration: none;
+  color: white;
 }
 
 /* #project-header {
