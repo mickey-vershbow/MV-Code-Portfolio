@@ -340,6 +340,56 @@ header {
   }
 }
 
+/* SKILLS */
+
+.my-skills {
+  background-image: url("https://ryanklintworth.github.io/images/overlay.png"),
+    linear-gradient(45deg, rgba(49, 215, 155, 0), #68a79d 80%);
+  background-size: auto, auto;
+  color: var(--clr-dark);
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+#skills-header,
+#skills-subheader {
+  text-align: center;
+}
+
+#skills-header {
+  padding-bottom: 15px;
+}
+
+#skills-subheader {
+  padding: 25px 0px;
+}
+
+#skills-line_break {
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* @media screen and (max-width: 600px) {
+  .icons-list {
+    width: 50%;
+    margin: 0 auto;
+  }
+} */
+
+/* About Me */
+
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
