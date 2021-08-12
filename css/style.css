@@ -348,6 +348,10 @@ header {
   margin: 0 auto;
 }
 
+.services p {
+  text-align: left;
+}
+
 @media (min-width: 800px) {
   .services {
     display: flex;
