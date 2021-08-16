@@ -150,13 +150,13 @@ h3 {
   margin-bottom: 2em;
 }
 
-.section__intro--text {
+.section__subtitle {
   font-family: var(--ff-primary);
   font-weight: var(--fw-reg);
-  padding: 0em 2em 2em 2em;
+  /* padding: 0em 2em 2em 2em;
   width: 80%;
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 750px; */
 }
 
 /* header */
