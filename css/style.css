@@ -348,7 +348,7 @@ header {
   margin: 0 auto;
 }
 
-.services p {
+.services p, .services h3 {
   text-align: left;
 }
 
