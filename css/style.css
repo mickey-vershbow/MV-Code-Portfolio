@@ -7,11 +7,11 @@
 /* Custom Properties, update these for your own design */
 
 :root {
-  --ff-primary: "Source Sans Pro", sans-serif;
-  --ff-secondary: "Source Code Pro", monospace;
+  --ff-primary: "Lora", serif;
+  --ff-secondary: "Roboto Slab", serif;
 
-  --fw-reg: 300;
-  --fw-bold: 900;
+  --fw-reg: 400;
+  --fw-bold: 700;
 
   --clr-light: #fff;
   --clr-dark: #303030;
@@ -472,24 +472,24 @@ li > h3 {
   overflow: hidden;
 }
 
-/* .portfolio__img {
+.portfolio__img {
   transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
-} */
+}
 
-/* .portfolio__item:focus {
+.portfolio__item:focus {
   position: relative;
   z-index: 2;
-} */
-/*
+}
+
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
   transform: scale(1.2);
   opacity: 0.5;
-} */
+}
 
 .image {
   position: relative;
-  /* width: 400px; */
+  width: fit-content;
 }
 
 .image__img {
@@ -508,7 +508,6 @@ li > h3 {
   font-family: var(--ff-primary);
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   opacity: 0;
   transition: opacity 0.25s;
