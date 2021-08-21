@@ -492,6 +492,11 @@ li > h3 {
   width: fit-content;
 }
 
+#portfolio__img--capstone {
+  box-shadow: 0.25em 0.25em 0.75em var(--clr-accent),
+    0.125em 0.125em 0.25em var(--clr-accent);
+}
+
 .image__img {
   display: block;
   width: 100%;
